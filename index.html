@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros en Camino</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Libros en Camino</h1>
+        <nav>
+            <div class="menu-toggle">
+                <button onclick="toggleMenu()">☰</button>
+            </div>
+            <ul id="nav-list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Catálogo</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="filters">
+
+        </section>
+        <section class="books">
+
+            <div class="book">
+                <img src="/assets/imgs/AVM.jpg" alt="Algo va Mal, Tony Judt">
+                <h2>Tony Judt, Algo va Mal</h2>
+                <p>$9.990</p>
+
+            </div>
+            <div class="book">
+                <img src="/assets/imgs/EDLR.jpg" alt="La era de la revolución, Eric Hobsbawm">
+                <h2>Eric Hobsbawm, La era de la revolución</h2>
+                <p>$12.990</p>
+
+            </div>
+            <div class="book">
+                <img src="/assets/imgs/1914.jpg" alt="1914, Margaret MacMillan">
+                <h2>Margaret MacMillan, 1914</h2>
+                <p>$18.990</p>
+
+            </div>
+            <div class="book">
+                <img src="/assets/imgs/LT.jpeg" alt="Los Taliban, Ahmed Rashid">
+                <h2>Ahmed Rashid, Los Taliban</h2>
+                <p>$7.990</p>
+
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p> Librería en Camino. Apoquindo s/n </p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var navList = document.getElementById("nav-list");
+            navList.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
